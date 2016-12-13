@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tony</title>
+	<meta name="Author" content=""/>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="nav">
+    <div class="wrapper"> 
+        <div class="navbar-header"> 
+            <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"> 
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+            </button> 
+            <a href="#" class="navbar-brand"><span class="logo">{{sitename}}</span></a> 
+        </div> 
+        <nav class="collapse navbar-collapse" id="bs-navbar"> 
+            <!--<ul class="nav navbar-nav"> 
+                <li> <a href="#">Menu 1</a> </li> 
+            </ul> -->
+            <ul class="nav navbar-nav navbar-right"> 
+                <li v-for="mlist in menulist"><a href="{{mlist.url}}" class="scroll {{mlist.classs}}">{{mlist.name}}</a></li> 
+            </ul> 
+        </nav> 
+    </div>
+</div>
+
+<header class="hero">
+    <!--<div class="wrapper"> 
+        <div class="navbar-header"> 
+            <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"> 
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+            </button> 
+            <a href="#" class="navbar-brand"><span class="logo">{{sitename}}</span></a> 
+        </div> 
+        <nav class="collapse navbar-collapse" id="bs-navbar"> 
+            <ul class="nav navbar-nav"> 
+                <li> <a href="#">Menu 1</a> </li> 
+            </ul> 
+            <ul class="nav navbar-nav navbar-right"> 
+                <li v-for="mlist in menulist"><a href="{{mlist.url}}" class="scroll {{mlist.classs}}">{{mlist.name}}</a></li> 
+            </ul> 
+        </nav> 
+    </div>-->
+    
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+        <h1 class="site-title">
+            <div class="site-name">Tony López Pagán</div>
+            <div class="site-summary">Consultor / Estratega Digital / Programador Web • Puerto Rico</div>
+        </h1>
+    </div>
+    
+    <div class="go-next">
+        <span><i class="fa fa-code" style="font-size:24px"></i></span>
+    </div>
+</header>
+
+<section id="hero-section">
+    <div class="wrapper"> </div>
+    
+    <div class="go-next-triangle">
+        <!--<span><i class="fa fa-code" style="font-size:24px"></i></span>-->
+    </div>
+</section>
+
+<section id="first-section">
+    <div class="wrapper">
+       <div class="row">
+           <div class="container">               
+                <div class="col-sm-3" v-for="column in columns">{{column.text}}</div>
+           </div>
+       </div>
+    </div>
+    
+    <div class="go-next-square">
+        <!--<span><i class="fa fa-code" style="font-size:24px"></i></span>-->
+    </div>
+</section>
+
+<section>
+    <div class="wrapper">
+       <div class="row">
+           <div class="container">               
+                <div class="col-sm-3" v-for="column in columns">{{column.text}}</div>
+           </div>
+       </div>
+    </div>
+</section>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="../node_modules/vue/dist/vue.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
