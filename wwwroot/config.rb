@@ -16,8 +16,8 @@ javascripts_dir = "assets/js"
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = false
+line_comments = true
 
 preferred_syntax = :scss
 
-environment = 'development' #'production'
+environment = :production
