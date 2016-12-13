@@ -9,6 +9,7 @@
   "author": "Tony López",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.3.5",
     "jquery": "^3.1.1",
     "vue": "^1.0.28"
   }
