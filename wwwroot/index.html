@@ -34,6 +34,7 @@
 <header class="hero">
     
     <div class="hero-bg"></div>
+    <div class="hero-bg-filter"></div>
 
     <div class="hero-content">
         <h1 class="site-title">
@@ -43,7 +44,11 @@
     </div>
     
     <div class="go-next">
-        <a href="#hero-section" class="page-scroll"><span class="glyphicons glyphicon-chevron-down"></span></a>
+       <div class="circle">
+			<div id="fill" class="circle-in"></div>
+			<a href="#" class="vtxt"><span class="glyphicons glyphicon-chevron-down"></span></a>
+			<a href="#hero-section-view" class="page-scroll"> <span class="glyphicons glyphicon-triangle-bottom"></span>  </a>
+		</div>
     </div>
 </header>
 
@@ -52,8 +57,10 @@
         <div id="hero-section-view"></div>
     </div>
     
-    <div class="go-next-triangle">
-        <a href="#square" class="page-scroll"><i class="fa fa-code" style="font-size:24px"></i></a>
+    <div class="go-next-triangle spin">
+        <div class="go-next-triangle-in">
+            <a href="#square" class="page-scroll"></a>
+        </div>
     </div>
 </section>
 
@@ -67,8 +74,23 @@
         </div>
     </div>
     
-    <div class="go-next-square">
-        <a href="#last" class="page-scroll"><i class="fa fa-code" style="font-size:24px"></i></a>
+    <div class="go-next-square spin">
+        <a href="#last" class="page-scroll"></a>
+    </div>
+</section>
+
+<section id="prelast-section">
+    <div class="wrapper">
+        <div id="last-section-view"></div>
+        <div class="row">
+           <div class="container">               
+                <div class="col-sm-3" v-for="column in columns">{{column.text}}</div>
+           </div>
+        </div>
+    </div>
+    
+    <div class="go-next-hexagon spin">
+        <a href="#last" class="page-scroll"></a>
     </div>
 </section>
 
