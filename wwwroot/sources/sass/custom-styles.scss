@@ -7,7 +7,7 @@ $LIGHT_GRAY: #CCCCCC;
 $BLACK:      #000000;
 $LIGHT_BLACK1:#333333;
 $LIGHT_BLACK:#1A1A1A;
-$DARK_GRAY:  #333333;
+$DARK_GRAY:  #444444;
 $GRAY:       #666666;
 $LIGHT_GRAY: #7E7F7D;
 $WHITE:      #FFFFFF;
@@ -252,14 +252,15 @@ header {
         }
 
         .hero-bg-filter { 
-            left: 0;
+            /*left: 0;
             background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,$LIGHT_BLACK),color-stop(100%,$LIGHT_BLUE));
             background: -webkit-linear-gradient(45deg,$LIGHT_BLACK 0,$LIGHT_BLUE 100%);
             background: -webkit-linear-gradient(45deg, $LIGHT_BLACK 0, $LIGHT_BLUE 100%);
             background: linear-gradient(45deg,$LIGHT_BLACK 0, $LIGHT_BLUE 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$LIGHT_BLACK', endColorstr='$LIGHT_BLUE', GradientType=1);
-
-            opacity: 0.85;
+            opacity: 0.85;*/
+            
+            background-color: rgba(0, 0, 0, .65);
 
             position: fixed;
             width: 100%;
@@ -359,7 +360,7 @@ header {
             }
             
             .circle-in {
-                border: 5px solid $LIGHT_BLACK1;
+                border: 4px double $LIGHT_WHITE; 
                 display: block;
                 width: 100%;
                 height: 100%;
@@ -391,13 +392,13 @@ header {
                 font-size: 0px;
             }
 
-            &:hover .circle-in {
+            &:hover .circle-in { 
                 margin: 2.5%;
                 height: 95%;
                 width: 95%;
-                border-radius: 24px;
-                border: 5px solid $LIGHT_BLACK1;
-                /* -webkit-transform: rotate(100deg);
+                border-radius: 24px; 
+                border: 4px solid $LIGHT_WHITE;
+                /* -webkit-transform: rotate(100deg); 
                 -moz-transform: rotate(100deg);
                 -ms-transform: rotate(100deg);
                 -o-transform: rotate(100deg);
@@ -419,8 +420,8 @@ header {
             }
             
             #fill.circle-in {
-                /*background: $LIGHT_BLUE;*/
-                background: rgba(20, 150, 200, .7);
+                background: $TRANSP;
+               /* background: rgba(20, 150, 200, .3);*/
             }
         }
     }
@@ -469,14 +470,14 @@ section#hero-section {
         height: 1px;
     }
     
-    .go-next-triangle { 
+    .go-next-triangle {  
         width: 0;
         height: 0;
         border-style: solid;
         border-width: 32px 24px 0 24px;
-        border-color: #333 transparent transparent transparent;
+        border-color: $LIGHT_BLACK1 transparent transparent transparent;
         line-height: 0px;
-        _border-color: #333 #000000 #000000 #000000;
+        _border-color: $LIGHT_BLACK1 #000000 #000000 #000000;
         _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
             
         position: absolute;
@@ -526,7 +527,7 @@ section#first-section {
 }
 
 section#prelast-section {
-    background-color: #E5E5ED;
+    background-color: $LIGHT_WHITE;
     color: $LIGHT_BLACK;
     padding-top: 60px;
 
@@ -537,10 +538,10 @@ section#prelast-section {
     .go-next-hexagon {        
         width: 48px; 
         height: 27.71px;
-        background-color: #26a6f4;
+        background-color: #FBE100; 
         margin: 13.86px 0;
-        border-left: solid 5px #333333;
-        border-right: solid 5px #333333;
+        border-left: solid 5px $LIGHT_BLACK1;
+        border-right: solid 5px $LIGHT_BLACK1;
         
         position: absolute;
         bottom: 10px;
@@ -549,7 +550,7 @@ section#prelast-section {
 
         &:before,
         &:after {
-          content: "";
+          content: ""; 
           position: absolute;
           z-index: 1;
           width: 33.94px;
@@ -563,14 +564,14 @@ section#prelast-section {
 
         &:before {
           top: -16.9706px;
-          border-top: solid 7.0711px #333333;
-          border-right: solid 7.0711px #333333;
+          border-top: solid 7.0711px $LIGHT_BLACK1;
+          border-right: solid 7.0711px $LIGHT_BLACK1;
         }
 
         &:after {
           bottom: -16.9706px;
-          border-bottom: solid 7.0711px #333333;
-          border-left: solid 7.0711px #333333;
+          border-bottom: solid 7.0711px $LIGHT_BLACK1;
+          border-left: solid 7.0711px $LIGHT_BLACK1;
         }
     }
 }
