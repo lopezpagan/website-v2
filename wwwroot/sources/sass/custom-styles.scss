@@ -2,23 +2,25 @@
 * VARIABLES
 */
 
+$BLUE1: #003CB6; 
+$BLUE2: #004BC5; 
 $LIGHT_BLUE: #00B9F2; 
 $LIGHT_GRAY: #CCCCCC;
 $BLACK:      #000000;
 $LIGHT_BLACK1:#333333;
 $LIGHT_BLACK:#1A1A1A;
 $DARK_GRAY:  #444444;
-$GRAY:       #666666;
+$GRAY:       #666666; 
 $LIGHT_GRAY: #7E7F7D;
 $WHITE:      #FFFFFF;
-$LIGHT_WHITE:#F9F9F9;
+$LIGHT_WHITE:#E4E4EB;
 $TRANSP:     transparent;
 $FONT1:      'Muli', sans-serif !important;
 $FONT2:      'Open Sans', sans-serif !important;
 
 $H1_FSIZE: 54px;
 $H1_LHEIGHT: 64px;
-$H1_COLOR: $WHITE;
+$H1_COLOR: $LIGHT_WHITE;
 $H1_FONT: $FONT1;
 
 $H2_FSIZE: 20px;
@@ -167,11 +169,13 @@ span.logo {
 
 #nav {
     left: 0;
-    background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,$LIGHT_BLACK),color-stop(100%,$LIGHT_BLUE));
+    background-color: $BLUE1;
+    
+    /*background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,$LIGHT_BLACK),color-stop(100%,$LIGHT_BLUE));
     background: -webkit-linear-gradient(45deg,$LIGHT_BLACK 0,$LIGHT_BLUE 100%);
     background: -webkit-linear-gradient(45deg, $LIGHT_BLACK 0, $LIGHT_BLUE 100%);
     background: linear-gradient(45deg,$LIGHT_BLACK 0, $LIGHT_BLUE 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$LIGHT_BLACK', endColorstr='$LIGHT_BLUE', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$LIGHT_BLACK', endColorstr='$LIGHT_BLUE', GradientType=1);*/
     
     position: fixed;
     top: 0;
@@ -260,7 +264,9 @@ header {
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$LIGHT_BLACK', endColorstr='$LIGHT_BLUE', GradientType=1);
             opacity: 0.85;*/
             
-            background-color: rgba(0, 0, 0, .65);
+            background-color: $BLUE1;
+            opacity: .96;
+            /*background-color: rgba(0, 0, 0, .65);*/
 
             position: fixed;
             width: 100%;
@@ -577,7 +583,8 @@ section#prelast-section {
 }
 
 section#last-section {
-    background-color: $LIGHT_BLACK1;
+    /*background-color: $LIGHT_BLACK1;*/
+    background-color: $BLUE1;
     color: $LIGHT_WHITE;
     padding-top: 60px;
     
