@@ -167,6 +167,10 @@ span.logo {
     color: $LIGHT_WHITE;
 }
 
+.navbar-brand {
+    font-size: 32px !important;
+}
+
 #nav {
     left: 0;
     background-color: $BLUE1;
@@ -216,7 +220,6 @@ nav {
         background-color: transparent;
         
     }
-    
 }
 
 header {
@@ -285,7 +288,7 @@ header {
         margin-top: -75px;
         margin-left: -300px;
         text-align: center;
-        border: 4px double $LIGHT_WHITE;
+        /*border: 4px double $LIGHT_WHITE;*/  
         opacity: 1;
         
         h1.site-title {

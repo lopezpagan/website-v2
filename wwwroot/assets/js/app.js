@@ -1,7 +1,7 @@
 var app = new Vue({
     el: 'body',
     data: {
-        sitename: 'Site Name',
+        sitename: 'LP',
         menulist: {
             0: {
                 name: 'Start',
