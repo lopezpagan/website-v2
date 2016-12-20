@@ -2,15 +2,14 @@
     $(window).scroll(function(){
 
         var wScroll = $(this).scrollTop();
-        var wScrollReverse = 1-(wScroll/500);
+        var wScrollReverse = 1-(wScroll/200);
 
-        //console.log(wScroll);
-
-        $('.hero-content').css({
+        //console.log(wScroll/2);
+        $('.header__box--h1').css({
             'transform': 'translate(0px, -' + wScroll/2 + '%)'
         });
 
-        $('.hero-content').css({
+        $('.header__box--h1').css({
             'opacity': wScrollReverse.toFixed(2)
         });
 

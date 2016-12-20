@@ -47,23 +47,36 @@
 
 <body>
 
-    <header data-spy="affix" data-offset-top="197">
-        <!-- header content goes in here -->
-        <nav class="collapse navbar-collapse" id="bs-navbar">
-            <!--<ul class="nav navbar-nav"> 
-            <li> <a href="#">Menu 1</a> </li> 
-        </ul> -->
-            <ul class="nav navbar-nav navbar-right">
-                <li v-for="mlist in menulist"><a href="{{mlist.url}}" class="page-scroll {{mlist.classs}}">{{mlist.name}}</a></li>
-            </ul>
-        </nav>
+    <header data-spy="affix" data-offset-top="1">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header"> 
+                    <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button> 
+                    <a href="#start" class="navbar-brand page-scroll"><span class="logo">{{sitename}}</span></a>
+                </div> 
+                <nav class="collapse navbar-collapse" id="bs-navbar"> 
+                    <!--<ul class="nav navbar-nav"> 
+                        <li> <a href="#">Menu 1</a> </li> 
+                    </ul> -->
+                    <ul class="nav navbar-nav navbar-right"> 
+                        <li v-for="mlist in menulist"><a href="{{mlist.url}}" class="page-scroll {{mlist.classs}}">{{mlist.name}}</a></li>
+                    </ul> 
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main role="main">
         <div id="inicio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">  
+            <div class="header__box header__box--h1">  
+                <div class="container">
+                    <div class="row">
                         <h1>
                            Tony López Pagán<br/>
                            <small>Consultor, Estratega y Programador Web en Puerto Rico</small>
@@ -75,9 +88,9 @@
         
         <section id="propuesta">
             <!-- section content goes in here -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">  
+            <div class="header__box header__box--h2"> 
+                <div class="container">
+                    <div class="row"> 
                         <h2>
                         “Estoy enfocado en el desarrollo web para agencias, startups y PYMES.  Mi trabajo es una mezcla de consultoría, estrategia y ejecución. Mi objetivo ser la pieza fundamental entre la idea y el resultado.”
                         </h2>
@@ -256,32 +269,32 @@
                         </header>
                         
                         <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>SASS</li>
-                            <li>Compass</li>
-                            <li>AnimateJS</li>
-                            <li>Javascript</li>
-                            <li>jQuery</li>
-                            <li>jQuery Mobile</li>
-                            <li>JSON</li>
-                            <li>XML</li>
-                            <li>MongoDB</li>
-                            <li>ExpressJS</li>
-                            <li>AngularJS</li>
-                            <li>NodeJS</li>
-                            <li>VueJS</li>
-                            <li>NPM</li>
-                            <li>Bower</li>
-                            <li>Gulp</li>
-                            <li>Grunt</li>
-                            <li>Git</li>
-                            <li>MySQL</li>
-                            <li>MSSQL</li>
-                            <li>SQL Query Language</li>
-                            <li>PHP</li>
-                            <li>Lógica de Programación</li>
-                            <li>Wordpress</li>
+                            <li><a class="code__link" href="#" target="_blank">HTML5</a></li>
+                            <li><a class="code__link" href="#" target="_blank">CSS3</a></li>
+                            <li><a class="code__link" href="#" target="_blank">SASS</a></li>
+                            <li><a class="code__link" href="#" target="_blank">Compass</a></li>
+                            <li><a class="code__link" href="#" target="_blank">AnimateJS</a></li>
+                            <li><a class="code__link" href="#" target="_blank">Javascript</a></li>
+                            <li><a class="code__link" href="#" target="_blank">jQuery</a></li>
+                            <li><a class="code__link" href="#" target="_blank">jQuery Mobile</a></li>
+                            <li><a class="code__link" href="#" target="_blank">JSON</a></li>
+                            <li><a class="code__link" href="#" target="_blank">XML</a></li>
+                            <li><a class="code__link" href="#" target="_blank">MongoDB</a></li>
+                            <li><a class="code__link" href="#" target="_blank">ExpressJS</a></li>
+                            <li><a class="code__link" href="#" target="_blank">AngularJS</a></li>
+                            <li><a class="code__link" href="#" target="_blank">NodeJS</a></li>
+                            <li><a class="code__link" href="#" target="_blank">VueJS</a></li>
+                            <li><a class="code__link" href="#" target="_blank">NPM</a></li>
+                            <li><a class="code__link" href="#" target="_blank">Bower</a></li>
+                            <li><a class="code__link" href="#" target="_blank">Gulp</a></li>
+                            <li><a class="code__link" href="#" target="_blank">Grunt</a></li>
+                            <li><a class="code__link" href="#" target="_blank">Git</a></li>
+                            <li><a class="code__link" href="#" target="_blank">MySQL</a></li>
+                            <li><a class="code__link" href="#" target="_blank">MSSQL</a></li>
+                            <li><a class="code__link" href="#" target="_blank">SQL Query Language</a></li>
+                            <li><a class="code__link" href="#" target="_blank">PHP</a></li>
+                            <li><a class="code__link" href="#" target="_blank">Lógica de Programación</a></li>
+                            <li><a class="code__link" href="#" target="_blank">Wordpress</a></li>
                         </ul>
                     </div>
                     
@@ -301,8 +314,8 @@
                         
                         <h5>Si deseas conocer más sobre mis servicios y en cómo puedo servirles puedes contactarme a:</h5>
                         <ul>
-                            <li>tony@lopezpagan.com</li>
-                            <li>+1 787 518 3032</li>
+                            <li><a class="main__link" href="mailto:tony@lopezpagan.com">tony@lopezpagan.com</a></li>
+                            <li><a class="main__link" href="tel:17875183032">+1 787 518 3032</a></li>
                         </ul>
                     </div>
                     
@@ -322,10 +335,10 @@
                                 <h3>CONÉCTATE A TRAVÉS DE LAS REDES SOCIALES</h3>
                             </header>
                             <ul>                            
-                                <li>Sígueme en Twitter</li>
-                                <li>Me gusta en Facebook</li>
-                                <li>Sígueme en Github</li>
-                                <li>Añádeme en LinkedIn</li>
+                                <li><a class="main__link" href="http://twitter.com/lopezpagan">Sígueme en Twitter</a></li>
+                                <li><a class="main__link" href="http://facebook.com/lopezpagan">Me gusta en Facebook</a></li>
+                                <li><a class="main__link" href="http://github.com/lopezpagan">Sígueme en Github</a></li>
+                                <li><a class="main__link" href="#">Añádeme en LinkedIn</a></li>
                             </ul>
                             
                         </div>
@@ -333,22 +346,22 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <!-- footer content goes in here -->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    Copywriter
+        <div id="footer">
+            <!-- footer content goes in here -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        Copywriter
+                    </div>
+
+                    <div class="col-sm-4">
+                        Back to top
+                    </div>                
                 </div>
-                
-                <div class="col-sm-4">
-                    Back to top
-                </div>                
             </div>
         </div>
-    </footer>
+    </main>
     <!-- SCRIPTS -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-easing/jquery.easing.min.js"></script>

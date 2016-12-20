@@ -7,4 +7,5 @@
 
         event.preventDefault();
     });
+    
 })(jQuery);
