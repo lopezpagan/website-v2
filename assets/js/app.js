@@ -4,23 +4,23 @@ var app = new Vue({
         sitename: 'LP',
         menulist: {
             0: {
-                name: 'Start',
-                url: '#start',
+                name: 'Inicio',
+                url: '#inicio',
                 classs: 's'
             },
             1: {
-                name: 'Hero Section',
-                url: '#hero-section-view',
+                name: 'Proyectos',
+                url: '#proyectos',
                 classs: 'c'
             },
             2: {
-                name: 'First Section',
-                url: '#first-section-view',
+                name: 'Sobre Mí',
+                url: '#sobremi',
                 classs: 'c'
             },
             3: {
-                name: 'Last Section',
-                url: '#last-section-view',
+                name: 'Contacto',
+                url: '#contacto',
                 classs: 'c'
             }
         },
