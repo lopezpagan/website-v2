@@ -1,0 +1,265 @@
+{
+    "head": {
+        "logo": {
+            "href": "#start",
+            "text": "LP",
+            "src": "",
+            "class": "page-scroll"            
+        },
+        "menulist": {
+            "0": {
+                "name": "Inicio",
+                "url": "#inicio",
+                "class": "s page-scroll"
+            },
+            "1": {
+                "name": "Proyectos",
+                "url": "#proyectos",
+                "class": "c page-scroll"
+            },
+            "2": {
+                "name": "Sobre Mí",
+                "url": "#sobremi",
+                "class": "c page-scroll"
+            },
+            "3": {
+                "name": "Contacto",
+                "url": "#contacto",
+                "class": "c page-scroll"
+            }
+        }
+    },
+    "start": {
+        "h1": "Tony López Pagán",
+        "small": "Consultor, Estratega y Programador Web en Puerto Rico"
+    },
+    "proposition": {
+        "h2": "Colaboro con agencias y startups en el desarrollo de productos y servicios digitales que solucionan problemas y añaden valor a las marcas."
+    },
+    "projects": {
+        "h3": "Proyectos Desarrollados"
+    },
+    "value": {
+        "h2": "Mi trabajo es una mezcla de consultoría, estrategia y ejecución. Mi objetivo ser el conector entre la idea y el resultado final."
+    },
+    "about": {
+        "intro": {
+            "h3": "¿Quién Soy?",
+            "h6": "Soy un consultor y programador web. Tengo un vasto conocimiento en el proceso del desarrollo de un proyecto desde la idea hasta luego del lanzamiento. Soy un recurso confiable, seguro y muy disciplinado con el tiempo. <br/> <br/>Soy exigente con mi trabajo, porque creo que lo que hago es un reflejo de quien soy. Mi enfoque principal son las agencias y startups. Mi objetivo es colaborar en el desarrollo de productos y servicios que solucionan problemas y añaden valor a las marcas."
+        },
+        "work": {
+            "h3": "¿QUÉ TRABAJO REALIZO?",
+            "list": {
+                "0": {
+                    "h6": "Aplicaciones Web",
+                    "p": "Desde un catálogo de productos hasta un sistema de administración o de automatización de procesos."
+                },
+                "1": {
+                    "h6": "Sitios Web",
+                    "p": "Desde páginas de captura “landing pages”, plantillas de emails corporativas hasta sitios web para las empresas."
+                },
+                "2": {
+                    "h6": "Campañas Digitales",
+                    "p": "Crear un mapa de la ruta del consumidor desde ser un extraño hasta llegar a ser un promotor."
+                },
+                "3": {
+                    "h6": "Consultoría",
+                    "p": "Recomendaciones en la experiencia del usuario, posicionamiento en los motores de búsqueda “SEO” o colaborar en una propuesta para algún cliente en específico."
+                }
+            }
+        },
+        "offer": {
+            "h3": "¿QUÉ VALOR OFREZCO?",
+            "list": {
+                "0": {
+                    "h6": "Experiencia y “expertise”",
+                    "p": "Soy un programador web profesional con +15 años de experiencia trabajando en distintos ambientes y colaborando en cada una de las etapas del ciclo de desarrollo de proyectos."
+                },
+                "1": {
+                    "h6": "Conocimiento de las necesidades y tiempos de las agencias",
+                    "p": "Conozco muy bien las distintas necesidades y el sentido de urgencia que se tiene dentro de una agencia y esto me permite ser entendido con los tiempos y objetivos establecidos."
+                },
+                "2": {
+                    "h6": "Colaboración confiable y segura",
+                    "p": "Me gusta trabajar de la mano con los clientes para brindarles el apoyo que necesitan desde la idea hasta luego de lanzamiento."
+                },
+                "3": {
+                    "h6": "Acceso a otros recursos",
+                    "p": "Tengo acceso a muchísimos otros recursos que están en el campo del desarrollo y están dispuesto a colaborar cuando se los solicite."
+                }
+            }
+        },
+        "collaborate": {
+            "h3": "¿Cón Quién He Colaborado?",
+            "p": "En los últimos años he realizado trabajos para KIS Digital (Key Integrated Solutions), de la Cruz Group, Cobalto, Y &amp; R, Chat Agency, Arteaga &amp; Arteaga, Digital Dreams, Xtreme Tech Consulting y Encanto Restaurants con clientes tales como: ATH (Evertec), Sistema Ana G. Méndez, Sistema de TV (Canal 40), B. Fernández &amp; Hnos, Bacardí, Tic-Tac, Coca-Cola, Direct TV, Supermercados Econo, Supermax, Universal Insurance, MBTI Business Training Institute, John Dewey University, Columbia College, Tic-Tac, Coca-Cola, Sony, KFC, Pizza Hut, Taco Bell, Taco Maker, Nestlé, MCS, SCJ, Huggies, FirstBank, Santander, Acura, Lexus Puerto Rico, AutogermanaMini, Centrum, Pfizer, Filler, Brava Lubricants y muchos más."
+        },
+        "technology": {
+            "h3": "¿EN QUÉ TECNOLOGÍAS DESARROLLO?",
+            "list": {
+                "0": {
+                    "text": "HTML5",
+                    "href": "https://en.wikipedia.org/wiki/HTML5"
+                },
+                "1": {
+                    "text": "CSS3",
+                    "href": "https://en.wikipedia.org/wiki/CSS3"
+                },
+                "2": {
+                    "text": "SASS",
+                    "href": "https://en.wikipedia.org/wiki/SASS"
+                },
+                "3": {
+                    "text": "Compass",
+                    "href": "http://compass-style.org/"
+                },
+                "4": {
+                    "text": "Javascript",
+                    "href": "https://en.wikipedia.org/wiki/Javascript"
+                },
+                "5": {
+                    "text": "JQuery",
+                    "href": "https://en.wikipedia.org/wiki/JQuery"
+                },
+                "6": {
+                    "text": "XML",
+                    "href": "https://en.wikipedia.org/wiki/XML"
+                },
+                "7": {
+                    "text": "JSON",
+                    "href": "https://en.wikipedia.org/wiki/JSON"
+                },
+                "8": {
+                    "text": "API",
+                    "href": "https://en.wikipedia.org/wiki/API"
+                },
+                "9": {
+                    "text": "AnimateJS",
+                    "href": "https://en.wikipedia.org/wiki/AnimateJS"
+                },
+                "10": {
+                    "text": "VueJS",
+                    "href": "https://en.wikipedia.org/wiki/VueJS"
+                },
+                "11": {
+                    "text": "AngularJS",
+                    "href": "https://en.wikipedia.org/wiki/AngularJS"
+                },
+                "12": {
+                    "text": "NodeJS",
+                    "href": "https://en.wikipedia.org/wiki/NodeJS"
+                },
+                "13": {
+                    "text": "ExpressJS",
+                    "href": "https://en.wikipedia.org/wiki/ExpressJS"
+                },
+                "14": {
+                    "text": "EJS",
+                    "href": "https://en.wikipedia.org/wiki/EJS"
+                },
+                "15": {
+                    "text": "Jade",
+                    "href": "https://en.wikipedia.org/wiki/Jade"
+                },
+                "16": {
+                    "text": "NPM",
+                    "href": "https://en.wikipedia.org/wiki/NPM"
+                },
+                "17": {
+                    "text": "Bower",
+                    "href": "https://en.wikipedia.org/wiki/Bower"
+                },
+                "18": {
+                    "text": "Git",
+                    "href": "https://en.wikipedia.org/wiki/Git"
+                },
+                "19": {
+                    "text": "MySQL",
+                    "href": "https://en.wikipedia.org/wiki/MySQL"
+                },
+                "20": {
+                    "text": "MSSQL",
+                    "href": "https://en.wikipedia.org/wiki/MSSQL"
+                },
+                "21": {
+                    "text": "SQL Query Language",
+                    "href": "https://en.wikipedia.org/wiki/SQL"
+                },
+                "22": {
+                    "text": "PHP",
+                    "href": "https://en.wikipedia.org/wiki/PHP"
+                },
+                "23": {
+                    "text": "Wordpress",
+                    "href": "https://en.wikipedia.org/wiki/Wordpress"
+                },
+                "24": {
+                    "text": "Code Igniter",
+                    "href": "https://en.wikipedia.org/wiki/CodeIgniter"
+                },
+                "25": {
+                    "text": "Cordova",
+                    "href": "https://en.wikipedia.org/wiki/Apache_Cordova"
+                }
+            }
+        }
+    },
+    "contact": {
+        "intro": {
+            "h3": "¿Nos Tomamos Un Café?",
+            "h6": "El estar ubicado en Puerto Rico nos da la oportunidad de sentarnos y dialogar en cualquier momento. Tendrás la seguridad y la confianza de contar con un experto en el momento que más lo necesites.",
+            "h5": "Si deseas conocer más sobre los servicios que ofrezco puedes contactarme a:"
+        },
+        "list": {
+            "0": {
+                "text": "tony@lopezpagan.com",
+                "href": "mailto:tony@lopezpagan.com"
+            }, 
+            "1": {
+                "text": "+1 787 518 3032",
+                "href": "tel:17875183032"
+            }
+        },
+        "address": {
+            "h3": "DIRECCIÓN POSTAL",
+            "text": "P.O. Box 1457<br/>Dorado, PR 00646"
+        },
+        "socialmedia": {
+            "h3": "CONÉCTATE A TRAVÉS DE LAS REDES SOCIALES",
+            "list": {
+                "0": {
+                    "text": "Sígueme en Twitter",
+                    "href": "http://twitter.com/lopezpagan"
+                }, 
+                "1": {
+                    "text": "Me gusta en Facebook",
+                    "href": "http://facebook.com/lopezpaganpage"
+                }, 
+                "2": {
+                    "text": "Sígueme en Github",
+                    "href": "http://github.com/lopezpagan"
+                }, 
+                "3": {
+                    "text": "Añádeme en LinkedIn",
+                    "href": "https://www.linkedin.com/in/lopezpagan"
+                }
+            }
+        }
+    },
+    "footer": {
+        "copy": {
+            "text": "Copyright &copy; 2016",
+            "a": {
+                "text": "Tony López Pagán",
+                "href": "#inicio", 
+                "class": "page-scroll"
+            }
+        },
+        "menulist": {
+            "0": {
+                "text": "Back to top",
+                "href": "#inicio",
+                "class": "page-scroll"
+            }
+        }
+    }
+}

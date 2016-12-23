@@ -55,7 +55,7 @@
     </script>
 </head>
 
-<body>
+<body v-cloak>
 
     <header data-spy="affix" data-offset-top="1">
         <div class="container">
@@ -68,14 +68,14 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span> 
                     </button> 
-                    <a href="#start" class="navbar-brand page-scroll"><span class="logo">{{sitename}}</span></a>
+                    <a href="{{header.logo.href}}" class="navbar-brand {{header.logo.class}}"><span class="logo">{{header.logo.text}}</span></a>
                 </div> 
                 <nav class="collapse navbar-collapse" id="bs-navbar"> 
                     <!--<ul class="nav navbar-nav"> 
                         <li> <a href="#">Menu 1</a> </li> 
                     </ul> -->
                     <ul class="nav navbar-nav navbar-right"> 
-                        <li v-for="mlist in menulist"><a href="{{mlist.url}}" class="page-scroll {{mlist.classs}}">{{mlist.name}}</a></li>
+                        <li v-for="mlist in header.menulist"><a href="{{mlist.url}}" class="{{mlist.class}}">{{mlist.name}}</a></li>
                     </ul> 
                 </nav>
             </div>
@@ -88,8 +88,8 @@
                 <div class="container">
                     <div class="row">
                         <h1>
-                           Tony López Pagán<br/>
-                           <small>Consultor, Estratega y Programador Web en Puerto Rico</small>
+                           {{start.h1}}<br/>
+                           <small>{{start.small}}</small>
                         </h1>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                         <div class="row">
                             <div class="col-xs-12">                    
                                 <h2>
-                                “Colaboro con agencias y startups en el desarrollo de productos y servicios digitales que solucionan problemas y añaden valor a las marcas.”
+                                “{{proposition.h2}}”
                                 </h2>
                             </div>
                         </div>
@@ -261,7 +261,7 @@
                         <div class="row">
                             <div class="col-xs-12">                    
                                 <h2>
-                                “Mi trabajo es una mezcla de consultoría, estrategia y ejecución. Mi objetivo ser el conector entre la idea y el resultado final.”
+                                “{{value.h2}}”
                                 </h2>
                             </div>
                         </div>
@@ -278,45 +278,25 @@
                         <div class="row">
                             <div class="col-xs-12">                   
                                 <header>
-                                    <h3>¿QUIÉN SOY?</h3>
+                                    <h3>{{about.intro.h3}}</h3>
                                 </header>
-                                <h6>Soy un consultor y programador web.  Tengo un vasto conocimiento en el proceso del desarrollo de un proyecto desde la idea hasta luego del lanzamiento.   Soy un recurso confiable, seguro y muy disciplinado con el tiempo.</h6>
-                                <h6>Soy exigente con mi trabajo, porque creo que lo que hago es un reflejo de quien soy.  Mi enfoque principal son las agencias y startups. Mi objetivo es colaborar en el desarrollo de productos y servicios que solucionan problemas y añaden valor a las marcas.</h6>
+                                <h6>{{{ about.intro.h6 }}}</h6>
                             </div>
                         </div> 
                                 
                         <div class="row">
                             <div class="col-xs-12">                    
                                 <header>
-                                    <h3>¿QUÉ TRABAJO REALIZO?</h3>
+                                    <h3>{{about.work.h3}}</h3>
                                 </header>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-3" v-for="work in about.work.list">
 
-                                <h6>Aplicaciones Web</h6>
-                                <p>Desde un catálogo de productos hasta un sistema de administración o de automatización de procesos.</p>
-
-                            </div>
-                            <div class="col-sm-3">
-
-                                <h6>Sitios Web</h6>
-                                <p>Desde páginas de captura “landing pages”, plantillas de emails corporativas hasta sitios web para las empresas.</p>
-
-                            </div>
-                            <div class="col-sm-3">
-
-                                <h6>Campañas Digitales</h6>
-                                <p>Crear un mapa de la ruta del consumidor desde ser un extraño hasta llegar a ser un promotor.
-        </p>
-
-                            </div>
-                            <div class="col-sm-3">
-
-                                <h6>Consultoría</h6>
-                                <p>Recomendaciones en la experiencia del usuario, posicionamiento en los motores de búsqueda “SEO” o colaborar en una propuesta para algún cliente en específico.</p>
+                                <h6>{{work.h6}}</h6>
+                                <p>{{work.p}}</p>
 
                             </div>
                         </div>
@@ -324,61 +304,24 @@
                         <div class="row">
                             <div class="col-sm-8">                    
                                 <header>
-                                    <h3>¿QUÉ VALOR OFREZCO?</h3>
+                                    <h3>{{about.offer.h3}}</h3>
                                 </header>
 
                                 <ul class="list__services">
-                                    <li>
-                                        <h6>Experiencia y “expertise”</h6>
-                                        <p>Soy un programador web profesional con +15 años de experiencia trabajando en distintos ambientes y colaborando en cada una de las etapas del ciclo de desarrollo de proyectos.</p>
-                                    </li>
-                                    <li>
-                                        <h6>Conocimiento de las necesidades y tiempos de las agencias</h6>
-                                        <p>Conozco muy bien las distintas necesidades y el sentido de urgencia que se tiene dentro de una agencia y esto me permite ser entendido con los tiempos y objetivos establecidos.</p>
-                                    </li>
-                                    <li>
-                                        <h6>Colaboración confiable y segura</h6>
-                                        <p>Me gusta trabajar de la mano con los clientes para brindarles el apoyo que necesitan desde la idea hasta luego de lanzamiento.</p>
-                                    </li>
-                                    <li>
-                                        <h6>Acceso a otros recursos</h6>
-                                        <p>Tengo acceso a muchísimos otros recursos que están en el campo del desarrollo y están dispuesto a colaborar cuando se los solicite.</p>
+                                    <li v-for="offer in about.offer.list">
+                                        <h6>{{offer.h6}}</h6>
+                                        <p>{{offer.p}}</p>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="col-sm-4">                    
                                 <header>
-                                    <h3>¿EN QUÉ TECNOLOGÍAS DESARROLLO?</h3>
+                                    <h3>{{about.technology.h3}}}</h3>
                                 </header>
 
                                 <ul class="list__tags">
-                                    <li><a class="code__link" href="#" target="_blank">HTML5</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">CSS3</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">SASS</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">Compass</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">AnimateJS</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">Javascript</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">jQuery</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">jQuery Mobile</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">JSON</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">XML</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">MongoDB</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">ExpressJS</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">AngularJS</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">NodeJS</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">VueJS</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">NPM</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">Bower</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">Gulp</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">Grunt</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">Git</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">MySQL</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">MSSQL</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">SQL Query Language</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">PHP</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">Lógica de Programación</a></li>
-                                    <li><a class="code__link" href="#" target="_blank">Wordpress</a></li>
+                                    <li v-for="technology in about.technology.list"><a class="code__link" href="{{technology.href}}" target="_blank">{{technology.text}}</a></li>
                                 </ul>
                             </div>
                         </div>     
@@ -386,11 +329,11 @@
                         <div class="row">
                             <div class="col-xs-12">                
                                 <header>
-                                    <h3>¿Cón Quién He Colaborado?</h3>
+                                    <h3>{{about.collaborate.h3}}</h3>
                                 </header>
                                 
                                 <p>
-                                    En los últimos años he realizado trabajos para KIS Digital (Key Integrated Solutions), de la Cruz Group, Cobalto, Y & R, Chat Agency, Arteaga & Arteaga, Digital Dreams, Xtreme Tech Consulting y Encanto Restaurants con clientes tales como: ATH (Evertec), Sistema Ana G. Méndez, Sistema de TV (Canal 40), B. Fernández & Hnos, Bacardí, Tic-Tac, Coca-Cola, Direct TV, Supermercados Econo, Supermax, Universal Insurance, MBTI Business Training Institute, John Dewey University, Columbia College, Tic-Tac, Coca-Cola, Sony, KFC, Pizza Hut, Taco Bell, Taco Maker, Nestlé, MCS, SCJ, Huggies, FirstBank, Santander, Acura, Lexus Puerto Rico, AutogermanaMini, Centrum, Pfizer, Filler, Brava Lubricants y muchos más.
+                                    {{about.collaborate.p}}
                                 </p>
                             </div>
                         </div>
@@ -407,14 +350,13 @@
                         <div class="row">
                             <div class="col-sm-8">                    
                                 <header>
-                                    <h3>¿NOS TOMAMOS UN CAFÉ?</h3>
+                                    <h3>{{contact.intro.h3}}</h3>
                                 </header>
-                                <h6>El estar ubicado en Puerto Rico nos da la oportunidad de sentarnos y dialogar en cualquier momento. Tendrás la seguridad y la confianza de contar con un experto en el momento que más lo necesites.</h6>
+                                <h6>{{contact.intro.h6}}</h6>
 
-                                <h5>Si deseas conocer más sobre los servicios que ofrezco puedes contactarme a:</h5>
+                                <h5>{{contact.intro.h5}}</h5>
                                 <ul class="list__link--inline">
-                                    <li><a class="main__link" href="mailto:tony@lopezpagan.com">tony@lopezpagan.com</a></li>
-                                    <li><a class="main__link" href="tel:17875183032">+1 787 518 3032</a></li>
+                                    <li v-for="list in contact.list"><a class="main__link" href="{{list.href}}">{{list.text}}</a></li>
                                 </ul>
                             </div>
 
@@ -422,23 +364,19 @@
                                 <div class="container-fluid">   
                                    <div class="row">                
                                         <header>
-                                            <h3>DIRECCIÓN POSTAL</h3>
+                                            <h3>{{contact.address.h3}}</h3>
                                         </header>
                                         <address>                            
-                                            P.O. Box 1457<br/>
-                                            Dorado, PR 00646
+                                            {{{contact.address.text}}}
                                         </address>
                                     </div>
 
                                     <div class="row">               
                                         <header>
-                                            <h3>CONÉCTATE A TRAVÉS DE LAS REDES SOCIALES</h3>
+                                            <h3>{{contact.socialmedia.h3}}</h3>
                                         </header>
                                         <ul class="list__link">                            
-                                            <li><a class="main__link" href="http://twitter.com/lopezpagan">Sígueme en Twitter</a></li>
-                                            <li><a class="main__link" href="http://facebook.com/lopezpagan">Me gusta en Facebook</a></li>
-                                            <li><a class="main__link" href="http://github.com/lopezpagan">Sígueme en Github</a></li>
-                                            <li><a class="main__link" href="#">Añádeme en LinkedIn</a></li>
+                                            <li v-for="socialmedia in contact.socialmedia.list"><a class="main__link" href="{{socialmedia.href}}" target="_blank">{{socialmedia.text}}</a></li>
                                         </ul>
 
                                     </div>
@@ -457,11 +395,13 @@
                     <div class="container">                
                         <div class="row">
                             <div class="col-sm-8">
-                                Copyright &copy; 2016 <a href="#inicio" class="page-scroll">Tony López Pagán</a>
+                                {{{footer.copy.text}}} &nbsp; <a href="{{footer.copy.a.href}}" class="{{footer.copy.a.class}}">{{{footer.copy.a.text}}}</a>
                             </div>
 
                             <div class="col-sm-4">
-                                <a href="#inicio" class="page-scroll">Back to top</a>
+                                <span v-for="fmlist in footer.menulist">
+                                    <a href="{{fmlist.href}}" class="{{fmlist.class}}">{{fmlist.text}}</a>
+                                </span>
                             </div> 
                         </div>
                     </div>               
@@ -474,12 +414,13 @@
     <script src="bower_components/jquery-easing/jquery.easing.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/vue/dist/vue.min.js"></script>
-    <script src="bower_components/retinajs/dist/retina.min.js"></script>
+    <script src="bower_components/vue-resource/dist/vue-resource.min.js"></script>
+    <!--<script src="bower_components/retinajs/dist/retina.min.js"></script>-->
 
     <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/app.js"></script>
     <script src="assets/js/animation.js"></script>
-    <script src="assets/js/interaction.js"></script>
+    <!--<script src="assets/js/interaction.js"></script>-->
 
 </body>
 

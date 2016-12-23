@@ -1,45 +1,39 @@
 var app = new Vue({
     el: 'body',
     data: {
-        sitename: 'LP',
-        menulist: {
-            0: {
-                name: 'Inicio',
-                url: '#inicio',
-                classs: 's'
-            },
-            1: {
-                name: 'Proyectos',
-                url: '#proyectos',
-                classs: 'c'
-            },
-            2: {
-                name: 'Sobre Mí',
-                url: '#sobremi',
-                classs: 'c'
-            },
-            3: {
-                name: 'Contacto',
-                url: '#contacto',
-                classs: 'c'
-            }
-        },
-        columns: {
-            0: {
-                text: 'Column One'
-            },
-            1: {
-                text: 'Column Two'
-            },
-            2: {
-                text: 'Column Three'
-            },
-            3: {
-                text: 'Column Four'
-            }
-        }
+        header: [],
+        start: [],
+        proposition: [],
+        projects: [],
+        value: [],
+        about: [],
+        contact: [],
+        footer: []
+    },    
+    created: function() {
+        this.getSiteData();
     },
     methods: {
+        getSiteData: function(){
+            var dataUrl = 'content/site-data.json';
+            this.$http.get(dataUrl)
+                .then(function(res) {
+                    this.header = res.data.head;
+                    this.start = res.data.start;
+                    this.proposition = res.data.proposition;
+                    this.projects = res.data.projects;
+                    this.value = res.data.value;
+                    this.about = res.data.about;
+                    this.contact = res.data.contact;
+                    this.footer = res.data.footer;
+                })
+                .then(function() {
+                    var imported = document.createElement('script');
+                        imported.src = 'assets/js/interaction.js';
+                        document.head.appendChild(imported);
+                    
+                });
+        }
     }
     
 });

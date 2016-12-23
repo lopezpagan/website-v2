@@ -28,6 +28,7 @@
     "jquery": "^3.1.1",
     "jquery-easing": "*",
     "bootstrap": "v3.3.5",
-    "retinajs": "^2.1.0"
+    "retinajs": "^2.1.0",
+    "vue-resource": "1.0.3"
   }
 }
