@@ -4,28 +4,28 @@
             "href": "#start",
             "text": "LP",
             "src": "",
-            "class": "page-scroll"            
+            "class": "page-scroll active"            
         },
         "menulist": {
             "0": {
                 "name": "Inicio",
                 "url": "#inicio",
-                "class": "s page-scroll"
+                "class": "page-scroll"
             },
             "1": {
                 "name": "Proyectos",
                 "url": "#proyectos",
-                "class": "c page-scroll"
+                "class": "page-scroll"
             },
             "2": {
                 "name": "Sobre Mí",
                 "url": "#sobremi",
-                "class": "c page-scroll"
+                "class": "page-scroll"
             },
             "3": {
                 "name": "Contacto",
                 "url": "#contacto",
-                "class": "c page-scroll"
+                "class": "page-scroll"
             }
         }
     },
