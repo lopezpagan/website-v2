@@ -4,13 +4,13 @@
             "href": "#start",
             "text": "LP",
             "src": "",
-            "class": "page-scroll active"            
+            "class": "page-scroll"            
         },
         "menulist": {
             "0": {
                 "name": "Inicio",
                 "url": "#inicio",
-                "class": "page-scroll"
+                "class": "page-scroll active"
             },
             "1": {
                 "name": "Proyectos",
